@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import { config } from './config.js';
 import './App.css';
 import { Entry } from './Entry.js';
-import { Thumbnail } from './Thumbnail.js';
 import { Portfolio } from './Portfolio.js';
 import { Nav } from './Nav.js';
 import { About } from './About.js';

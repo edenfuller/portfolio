@@ -265,6 +265,9 @@ p.gallery-description {
     margin: 0;
     padding: 0;
 }
+.thumbnail.match {
+    transform: scale(1.2, 1.2);
+}
 .thumbnail.no-match {
     transform: scale(0.8, 0.8);
     opacity: 0.5;
@@ -310,6 +313,122 @@ img.thumbnail-preview {
     left: 0;
     margin: 0;
     padding: 0;
+    mix-blend-mode: luminosity;
+    opacity: 0;
+}
+img.thumbnail-preview : hover {
+    opacity: 1;
+    animation: none;
+}
+
+@keyframes peeksie {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+img.color {
+    position: absolute;
+    height: 100%;
+    max-width: 100%;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+img.color-design.illustration,
+img.color-illustration.development,
+img.color-illustration.design,
+img.color-dev.illustration,
+img.color-dev.design {
+    opacity: 0;
+}
+img.color-design.design,
+img.color-dev.development,
+img.color-illustration.illustration {
+    opacity: 1;
+}
+
+img.color-dev.design.development,
+img.color-illustration.design.illustration {
+    animation: color-1-2 6s 0s ease infinite;
+}
+img.color-design.design.development,
+img.color-design.design.illustration {
+    animation: color-2-2 6s 0s ease infinite;
+}
+img.color-design.design.development.illustration {
+    animation: color-1-2 9s 6s ease infinite;
+}
+img.color-dev.design.development.illustration {
+    animation: color-1-2 9s 3s ease infinite;
+}
+img.color-illustration.design.development.illustration {
+    animation: color-1-2 9s 0s ease infinite;
+}
+@keyframes color-1-2 {
+ from {
+     transform: scale(0,0);
+     z-index: 0;
+ }
+ 10% {
+     transform: scale(1,1);
+     z-index: 0;
+ }
+ 49% {
+     transform: scale(1,1);
+     z-index: 0;
+ }
+ 50% {
+     transform: scale(1,1);
+     z-index: -3;
+ }
+ 90% {
+     transform: scale(1,1);
+     z-index: -3;
+ }
+ to {
+     transform: scale(0,0);
+     z-index: -3;
+ }
+
+}
+@keyframes color-2-2 {
+ from {
+     transform: scale(1,1) translateZ(0px);
+     z-index: -3;
+ }
+ 40% {
+     transform: scale(1,1) translateZ(0px);
+     z-index: -3;
+ }
+ 49% {
+     transform: scale(0,0) translateZ(0px);
+     z-index: -3;
+ }
+ 50% {
+     transform: scale(0,0) translateZ(20px);
+     z-index: 0;
+ }
+ 60% {
+      transform: scale(1,1) translateZ(20px);
+      z-index: 0;
+ }
+ to {
+     transform: scale(1,1) translateZ(20px);
+     z-index: 0;
+ }
+
 }
 
 /*

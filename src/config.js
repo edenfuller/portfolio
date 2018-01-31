@@ -92,6 +92,7 @@ export const config = {
           title: "Mercedes E-Class (Entry 3)",
           role: "Developer, Illustrator",
           tags: [
+              'design',
               'development',
               'illustration',
           ],

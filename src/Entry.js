@@ -20,7 +20,7 @@ export class Entry extends Component {
                 galleryElements.push(<video className="gallery gallery-video" key={i} alt="gallery video" autoPlay="autoPlay" loop="loop"><source src={ entry.gallery[i].src } /></video>);
             }
             else {
-                galleryElements.push(<img className="gallery gallery-image" key={i} src={entry.gallery[i].src} />);
+                galleryElements.push(<img alt="" className="gallery gallery-image" key={i} src={entry.gallery[i].src} />);
             }
             if( entry.gallery[i].description ){
                 galleryElements.push(<p key={"gallery-description" + i} className="gallery-description">{entry.gallery[i].description}</p>)
@@ -35,11 +35,11 @@ export class Entry extends Component {
         }
         const descriptionButtons=[];
         if ( entry.demo ) {
-            const demo = <div id="demo" key="demo-holder"><img src={button_black} /><button key="demo" className="description-button" href={entry.demo}> Working Demo </button></div>
+            const demo = <div id="demo" key="demo-holder"><img alt="" src={button_black} /><button key="demo" className="description-button" href={entry.demo}> Working Demo </button></div>
             descriptionButtons.push(demo);
         }
         if ( entry.github ) {
-            const github = <div  id="github" key="github-holder"><img src={button_black} /><a  href={entry.github}><button key="github" className="description-button"> View on GitHub </button></a></div>
+            const github = <div id="github" key="github-holder"><img alt="" src={button_black} /><a  href={entry.github}><button key="github" className="description-button"> View on GitHub </button></a></div>
             descriptionButtons.push(github);
         }
         let buttonHolder;
@@ -51,7 +51,7 @@ export class Entry extends Component {
             header = <video className={entry.headerClass} alt="header image" autoPlay="autoPlay" loop="loop"><source src={ entry.headerSrc } /></video>
         }
         else {
-            header = <img src={ entry.headerSrc } className={entry.headerClass} alt="header image"  />
+            header = <img alt="" src={ entry.headerSrc } className={entry.headerClass} alt="header image"  />
         }
         const arrowClass = "divider-arrow " + entry.color;
         //const headerImg = import this.state.entry.headerSrc;

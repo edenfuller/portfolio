@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import color_design from './media/color_design.svg';
+import color_dev from './media/color_dev.svg';
+import color_illustration from './media/color_illustration.svg';
 
 export class Thumbnail extends Component {
     constructor( props ) {
@@ -9,10 +12,10 @@ export class Thumbnail extends Component {
     render() {
         const state = this.props.state;
         let entry = state.config.entries[this.props.id];
-        let tagMatch = false;
+        let tagMatch = 'no-match';
         // if no tag is selected (no value of true exists in tags object), everything is a match
         if (entry.tags && Object.values(state.tags).indexOf(true) === -1 ) {
-            tagMatch = true;
+            tagMatch = '';
         }
         // otherwise, check to see if any value of entry.tags matches any true value of state.tags
         else if (entry.tags) {
@@ -25,16 +28,29 @@ export class Thumbnail extends Component {
             }
         }
         let className = '';
+        let tagNames = '';
+        if(entry.tags){
+            for (let k = 0; k < entry.tags.length; k += 1){
+                tagNames += entry.tags[k] + ' ';
+            }
+        }
+        className += tagNames;
         className += entry.thumbnailShape || '';
-        className += tagMatch ? ' thumbnail match ' : ' thumbnail no-match ';
+        className += ' thumbnail ';
+        className += tagMatch;
+        let classIllustration = 'color color-illustration ' + tagNames;
+        let classDesign = 'color color-design ' + tagNames;
+        let classDev = 'color color-dev ' + tagNames;
         // className += entry.color || '';
         let inner;
         if ( entry.title ){
             inner = <div className="thumbnail-content-holder">
-                <img alt="" src={entry.thumbnail} className="thumbnail-preview" />
+                <img alt="" src={color_illustration} className={classIllustration} />
+                <img alt="" src={color_design} className={classDesign} />
+                <img alt="" src={color_dev} className={classDev} />
+                <img alt="thumbnail" src={entry.thumbnail} className="thumbnail-preview" />
                 <button
                     onClick={( e ) => {
-                        const self = this;
                         this.selectEntry(this.props.id);
 
                     }}
