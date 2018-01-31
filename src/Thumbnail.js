@@ -27,7 +27,7 @@ export class Thumbnail extends Component {
         let className = '';
         className += entry.thumbnailShape || '';
         className += tagMatch ? ' thumbnail match ' : ' thumbnail no-match ';
-        className += entry.color || '';
+        // className += entry.color || '';
         let inner;
         if ( entry.title ){
             inner = <div className="thumbnail-content-holder">

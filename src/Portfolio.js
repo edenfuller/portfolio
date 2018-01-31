@@ -14,10 +14,12 @@ export class Portfolio extends Component {
         let content = [];
         const itemsPerRow = 4;
         let row = [];
+        let rows = 0;
         for (let i = 0; i < entries.length; i += 1) {
             row.push(<Thumbnail selectEntry={this.selectEntry} state={this.props.state} id ={i} key={"thumbnail-" + i} />);
             if(row.length === itemsPerRow || i === entries.length - 1) {
-                content.push(<div className="row">{row}</div>);
+                rows += 1;
+                content.push(<div className="row" id={"row" + rows}>{row}</div>);
                 row = [];
             }
         }

@@ -229,6 +229,7 @@ p.gallery-description {
 */
 #row-holder {
     width: 100vw;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -241,10 +242,14 @@ p.gallery-description {
     align-items: center;
     flex-direction: row;
 }
+#row-holder:nth-child(2){
+    transform: translate(5vmin, 0vmin);
+}
+
 .thumbnail {
-    height: 10vmin;
-    width: 4vmin;
-    margin: 2rem;
+    height: 12vmin;
+    margin: 0.2vmin;
+    width: 5vmin;
     position: relative;
     transition: 0.5s all ease;
 }
@@ -264,6 +269,8 @@ p.gallery-description {
     transform: scale(0.8, 0.8);
     opacity: 0.5;
 }
+
+
 
 button {
     position: absolute;
