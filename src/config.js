@@ -53,9 +53,6 @@ export const config = {
             ],
         },
         {
-            shape: 'shape1',
-        },
-        {
            color: 'blue',
 
            thumbnail: mercedesThumb,
@@ -176,9 +173,6 @@ export const config = {
                 src: mercedes2,
             },
         ],
-      },
-      {
-         shape: 'shape1',
       },
       {
        color: 'blue',
