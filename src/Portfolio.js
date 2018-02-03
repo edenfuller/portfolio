@@ -12,7 +12,8 @@ export class Portfolio extends Component {
     render() {
         const entries = this.props.state.config.entries;
         let content = [];
-        const itemsPerRow = 4;
+        const evenOrOdd = entries.length % 2;
+        let itemsPerRow = evenOrOdd === 1 ? 4 : 3;
         let row = [];
         let rows = 0;
         for (let i = 0; i < entries.length; i += 1) {
@@ -21,6 +22,12 @@ export class Portfolio extends Component {
                 rows += 1;
                 content.push(<div className="row" id={"row" + rows}>{row}</div>);
                 row = [];
+                if( itemsPerRow === 3) {
+                    itemsPerRow += 1;
+                }
+                else {
+                    itemsPerRow -= 1;
+                }
             }
         }
         return (
