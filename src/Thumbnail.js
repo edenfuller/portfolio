@@ -13,7 +13,6 @@ export class Thumbnail extends Component {
         const state = this.props.state;
         let entry = state.config.entries[this.props.id];
         let tagMatch = 'no-match';
-        // if no tag is selected (no value of true exists in tags object), everything is a match
         if (entry.tags && Object.values(state.tags).indexOf(true) === -1 ) {
             tagMatch = '';
         }
@@ -22,7 +21,7 @@ export class Thumbnail extends Component {
             for (let j = 0; j < entry.tags.length; j += 1) {
                 console.log(entry.tags[j]);
                 if(state.tags[entry.tags[j]]) {
-                    tagMatch = true;
+                    tagMatch = 'match';
                     break;
                 }
             }
