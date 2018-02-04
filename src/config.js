@@ -3,6 +3,7 @@ import tabletPortrait from './media/tablet_portrait.png';
 import tabletLandscape from './media/tablet_landscape.png';
 import headerMercedes from './media/mercedes/mercedes.gif';
 import mercedesThumb from './media/mercedes/thumb.png';
+import testThumb from './media/testThumb.png';
 import mercedes0 from './media/mercedes/0.png';
 import mercedes1 from './media/mercedes/1.png';
 import mercedes2 from './media/mercedes/2.png';
@@ -25,7 +26,7 @@ export const config = {
     entries: [
          {
             color: 'pink',
-            thumbnail: mercedesThumb,
+            thumbnail: testThumb,
             title: "Mercedes E-Class Gallery",
             role: "Designer, Developer",
             tags: [
@@ -85,7 +86,7 @@ export const config = {
        },
        {
           color: 'orange',
-          thumbnail: mercedesThumb,
+          thumbnail: testThumb,
           title: "Mercedes E-Class (Entry 3)",
           role: "Developer, Illustrator",
           tags: [

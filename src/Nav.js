@@ -47,7 +47,7 @@ export class Nav extends Component {
                                 }}
                             >
                                 <img className={"nav-button nav-button-" + category} key={"nav-button-" + i} alt ="nav button"src={buttons[i]} />
-                                <img className={"nav-button-white nav-button-white" + category} key={"nav-button-" + i} alt ={category} src={button_white} />
+                                <img className={"nav-button-white nav-button-white" + category} key={"nav-button-white-" + i} alt ={category} src={button_white} />
                                 <p># { category }</p>
                             </button>
                         </li>

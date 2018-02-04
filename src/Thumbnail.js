@@ -54,6 +54,7 @@ export class Thumbnail extends Component {
 
                     }}
                 >
+                    <img alt="thumbnail-hover" src={entry.thumbnail} className="thumbnail-hover" />
                 </button>
             </div>
         }
