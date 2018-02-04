@@ -227,7 +227,7 @@ p.gallery-description {
 
 
 /*
-    THUMBNAILS
+    THUMBNAIL HOLDER / MAIN PORTFOLIO AREA
 */
 #portfolio-master, #star-holder {
     position: absolute;
@@ -365,6 +365,10 @@ p.gallery-description {
     margin: -1vmax 0;
 }
 
+/*
+    THUMBNAILS
+*/
+
 .thumbnail {
     height: 16vmax;
     margin: 0 0.5vmax;
@@ -464,34 +468,38 @@ img.color {
     padding: 0;
 }
 
-img.color-design.illustration,
-img.color-illustration.development,
-img.color-illustration.design,
-img.color-dev.illustration,
+/*
+///////////////////////////////START THUMBNAIL COLOR ASSIGNMENT
+*/
+
+img.color-design.illustrate,
+img.color-illustrate.develop,
+img.color-illustrate.design,
+img.color-dev.illustrate,
 img.color-dev.design {
-    display: none;
+    opacity: 0;
 }
 img.color-design.design,
-img.color-dev.development,
-img.color-illustration.illustration {
-    display: block;
+img.color-dev.develop,
+img.color-illustrate.illustrate {
+    opacity: 1;
 }
 
-img.color-dev.design.development,
-img.color-illustration.design.illustration {
+img.color-dev.design.develop,
+img.color-illustrate.design.illustrate {
     animation: color-1-2 6s 0s ease infinite;
 }
-img.color-design.design.development,
-img.color-design.design.illustration {
+img.color-design.design.develop,
+img.color-design.design.illustrate {
     animation: color-2-2 6s 0s ease infinite;
 }
-img.color-design.design.development.illustration {
+img.color-design.design.develop.illustrate {
     animation: color-1-2 9s 6s ease infinite;
 }
-img.color-dev.design.development.illustration {
+img.color-dev.design.develop.illustrate {
     animation: color-1-2 9s 3s ease infinite;
 }
-img.color-illustration.design.development.illustration {
+img.color-illustrate.design.develop.illustrate {
     animation: color-1-2 9s 0s ease infinite;
 }
 @keyframes color-1-2 {
@@ -519,7 +527,6 @@ img.color-illustration.design.development.illustration {
      transform: scale(0,0);
      z-index: -3;
  }
-
 }
 @keyframes color-2-2 {
  from {
@@ -548,15 +555,18 @@ img.color-illustration.design.development.illustration {
  }
 
 }
+/*
+///////////////////////////////END THUMBNAIL COLOR ASSIGNMENT
+*/
 
 /*
     NAV
 */
 
 img#logo{
-    top: 2vmin;
-    left: 2vmin;
-    height: 18vmin;
+    top: 2vmax;
+    left: 2vmax;
+    height: 14vmax;
     width: auto;
     position: absolute;
 }
@@ -603,21 +613,26 @@ button.category, button.about, button.contact {
 }
 
 button.about > p, button.contact > p {
-    font-size: 2vmin;
+    font-size: 2.5vmin;
+    font-family: 'Moon';
+    font-weight: bold;
+    padding-top: 0.2vmin;
 }
 
 button.category > p {
+    font-family: 'Moon';
+    padding-top: 0.2vmin;
     color: #ffffff;
     font-size: 2vmin;
     transition: color 0.3s ease;
 }
-button.category.selected.development > p {
+button.category.selected.develop > p {
     color: #1daffc;
 }
 button.category.selected.design > p {
     color: #7c66ff;
 }
-button.category.selected.illustration > p {
+button.category.selected.illustrate > p {
     color: #00d684;
 }
 button#about-back, button#contact-back {

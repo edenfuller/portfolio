@@ -11,8 +11,8 @@ export const config = {
     logo: logo,
     categories: [
         'design',
-        'development',
-        'illustration',
+        'develop',
+        'illustrate',
     ],
     about: {
         title: 'About',
@@ -30,7 +30,7 @@ export const config = {
             role: "Designer, Developer",
             tags: [
                 'design',
-                'development',
+                'develop',
             ],
             project: "Mobile rebuild of a desktop rich media advertisement rendered in a 3D environment. The 3D library exceeded the file weight limit of 300KB initial load and 1MB maximum load for all images and code. I worked with the client to develop a mobile advertisement that recreated the look and feel of the original using only web elements.",
             date: 2016,
@@ -90,8 +90,8 @@ export const config = {
           role: "Developer, Illustrator",
           tags: [
               'design',
-              'development',
-              'illustration',
+              'develop',
+              'illustrate',
           ],
           project: "Mobile rebuild of a desktop rich media advertisement rendered in a 3D environment. The 3D library exceeded the file weight limit of 300KB initial load and 1MB maximum load for all images and code. I worked with the client to develop a mobile advertisement that recreated the look and feel of the original using only web elements.",
           date: 2016,
@@ -150,7 +150,7 @@ export const config = {
         title: "Mercedes E-Class (Entry 5)",
         role: "Developer",
         tags: [
-            'development',
+            'develop',
         ],
         project: "Mobile rebuild of a desktop rich media advertisement rendered in a 3D environment. The 3D library exceeded the file weight limit of 300KB initial load and 1MB maximum load for all images and code. I worked with the client to develop a mobile advertisement that recreated the look and feel of the original using only web elements.",
         date: 2016,
@@ -181,7 +181,7 @@ export const config = {
        role: "Art Director, Prop Artist",
        tags: [
            'design',
-           'illustration',
+           'illustrate',
        ],
        project: "Mobile rebuild of a desktop rich media advertisement rendered in a 3D environment. The 3D library exceeded the file weight limit of 300KB initial load and 1MB maximum load for all images and code. I worked with the client to develop a mobile advertisement that recreated the look and feel of the original using only web elements.",
        date: 2016,
@@ -211,7 +211,7 @@ export const config = {
          title: "Mercedes E-Class (Entry 7)",
          role: "Developer",
          tags: [
-             'development',
+             'develop',
          ],
          project: "Mobile rebuild of a desktop rich media advertisement rendered in a 3D environment. The 3D library exceeded the file weight limit of 300KB initial load and 1MB maximum load for all images and code. I worked with the client to develop a mobile advertisement that recreated the look and feel of the original using only web elements.",
          date: 2016,
@@ -240,7 +240,7 @@ export const config = {
       title: "Mercedes E-Class (Entry 8)",
       role: "Illustrator",
       tags: [
-          'illustration',
+          'illustrate',
       ],
       project: "Mobile rebuild of a desktop rich media advertisement rendered in a 3D environment. The 3D library exceeded the file weight limit of 300KB initial load and 1MB maximum load for all images and code. I worked with the client to develop a mobile advertisement that recreated the look and feel of the original using only web elements.",
       date: 2016,
@@ -270,7 +270,7 @@ export const config = {
         title: "Mercedes E-Class (Entry 9)",
         role: "Developer",
         tags: [
-            'development',
+            'develop',
         ],
         project: "Mobile rebuild of a desktop rich media advertisement rendered in a 3D environment. The 3D library exceeded the file weight limit of 300KB initial load and 1MB maximum load for all images and code. I worked with the client to develop a mobile advertisement that recreated the look and feel of the original using only web elements.",
         date: 2016,

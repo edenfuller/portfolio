@@ -39,10 +39,8 @@ export class Portfolio extends Component {
         for(let j = 0; j < 30; j += 1) {
             const x = Math.random()*100 + 'vw';
             const y = Math.random()*100 + 'vh';
-            const delayAmount = Math.random * 10 + 's';
-            const animation = 'peekaboo 10s ' + delayAmount + 'linear infinite;';
             const position = 'left: ' + x + 'vw; height: ' + y + 'vw;'
-            const star = <div className={'star ' + starStyles[Math.floor(Math.random() * starStyles.length)]} style={{left: x, top: y, animation: animation}} />
+            const star = <div className={'star ' + starStyles[Math.floor(Math.random() * starStyles.length)]} style={{left: x, top: y}} />
             stars.push(star);
         }
         return (
