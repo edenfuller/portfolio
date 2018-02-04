@@ -39,9 +39,9 @@
     outline: none;
     border: none;
     color: #ffffff;
-    font-family: "Poppins";
+    font-family: "Moon";
     background: none;
-    font-size: 1.4rem;
+    font-size: 2vmin;
 }
 
 #button-holder {
@@ -75,18 +75,21 @@
 #entry-master, #about-master, #contact-master {
     width: 100vw;
     position: absolute;
+    overflow-y: hidden;
     top: 0;
     transition: all 0.5s ease;
 }
 
 #entry-master.hidden, #about-master.hidden, #contact-master.hidden {
     pointer-events: none;
+    height: 0;
     opacity: 0;
 }
 
 
 #entry-master.visible, #about-master.visible, #contact-master.visible {
     pointer-events: all;
+    height: auto;
     opacity: 1;
 }
 
@@ -144,7 +147,7 @@
 }
 #entry-header-text {
     color: #ffffff;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Moon', 'Poppins', sans-serif;
     font-weight: 100;
     font-size: 6vmin;
     text-transform: uppercase;
@@ -191,11 +194,13 @@
 
 h3, p {
     color: #    d32a87;
+}
+p {
     font-family: 'Poppins';
 }
 h3 {
-
-    font-weight: 100;
+    font-family: 'Moon', 'Poppins', sans-serif;
+    font-weight: lighter;
     font-size: 1.7em;
     margin-bottom: 0.2em;
     /* transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg); -for isometric headers */
@@ -421,7 +426,8 @@ button#entry-back, button#about-back, button#contact-back {
     background-position: center center;
     background-size: 100% 100%;
     text-transform: uppercase;
-    font-family: 'Poppins';
+    font-family: 'Moon';
+    font-weight: bold;
     font-size: 1.5rem;
     margin: 0;
     padding: 0;
@@ -482,34 +488,33 @@ img.thumbnail-hover:hover {
     }
 }
 
-img.thumbnail-preview:nth-child(1) {
-    animation-delay: 0.33s;
-}
-img.thumbnail-preview:nth-child(2) {
-    animation-delay: 0.66s;
-}
-img.thumbnail-preview:nth-child(3) {
+.row:nth-child(1) .thumbnail:nth-child(1) .thumbnail-content-holder img.thumbnail-preview {
     animation-delay: 1s;
 }
-img.thumbnail-preview:nth-child(4) {
-    animation-delay: 1.33s;
-}
-img.thumbnail-preview:nth-child(5) {
-    animation-delay: 1.66s;
-}
-img.thumbnail-preview:nth-child(6) {
+.row:nth-child(1) .thumbnail:nth-child(2) .thumbnail-content-holder img.thumbnail-preview {
     animation-delay: 2s;
 }
-img.thumbnail-preview:nth-child(7) {
-    animation-delay: 2.33s;
-}
-img.thumbnail-preview:nth-child(8) {
-    animation-delay: 2.66s;
-}
-img.thumbnail-preview:nth-child(9) {
+.row:nth-child(1) .thumbnail:nth-child(3) .thumbnail-content-holder img.thumbnail-preview {
     animation-delay: 3s;
 }
-
+.row:nth-child(1) .thumbnail:nth-child(4) .thumbnail-content-holder img.thumbnail-preview {
+    animation-delay: 4s;
+}
+.row:nth-child(2) .thumbnail:nth-child(1) .thumbnail-content-holder img.thumbnail-preview {
+    animation-delay: 5s;
+}
+.row:nth-child(2) .thumbnail:nth-child(2) .thumbnail-content-holder img.thumbnail-preview {
+    animation-delay: 6s;
+}
+.row:nth-child(2) .thumbnail:nth-child(3) .thumbnail-content-holder img.thumbnail-preview {
+    animation-delay: 7s;
+}
+.row:nth-child(2) .thumbnail:nth-child(4) .thumbnail-content-holder img.thumbnail-preview {
+    animation-delay: 8s;
+}
+.row:nth-child(3) .thumbnail:nth-child(1) .thumbnail-content-holder img.thumbnail-preview {
+    animation-delay: 9s;
+}
 @keyframes peekaboo {
     0% {
         opacity: 0;
