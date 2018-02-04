@@ -230,6 +230,7 @@ p.gallery-description {
 #row-holder {
     width: 100vw;
     height: 80vh;
+    padding: 2vh 0;   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -243,15 +244,16 @@ p.gallery-description {
     flex-direction: row;
 }
 #row-holder:nth-child(2){
-    transform: translate(5vmin, 0vmin);
+    transform: translate(50vmin, 0vmin);
 }
 
 .thumbnail {
-    height: 12vmin;
-    margin: 0.2vmin;
-    width: 5vmin;
+    height: 16vmax;
+    margin: -1vmax 0.5vmax;
+    padding: 0;
+    width: 6vmax;
     position: relative;
-    transition: 0.5s all ease;
+    transition: opacity 0.5s linear, transform 0.5s ease;
 }
 
 .thumbnail.shape1 {
@@ -443,21 +445,77 @@ img#logo{
     position: absolute;
 }
 #tags-list {
-    width: 30vw;
-    text-align: left;
+    bottom: 0;
+    height: 15vh;
+    width: 100vw;
+    position: absolute;
     display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+li.tagsItem, li.about, li.contact {
+    height: 4vmax;
+    width: 19vmax;
+    position: relative;
+}
+img.nav-button, img.nav-button-white, button.about > p, button.contact > p, button.category > p, button.category.selected > p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+img.nav-button-white {
+    transform: scale(0,0);
+    transition: all 0.3s ease;
+}
+button.category.selected > img.nav-button-white {
+transform: scale(1, 1);
+    transition: all 0.3s ease;
 }
 button.category, button.about, button.contact {
     position: relative;
     color: #000000;
 }
-button.category.selected {
-    background-color: #666666;
+
+button.about > p, button.contact > p {
+    font-size: 2vmin;
+}
+
+button.category > p {
     color: #ffffff;
+    font-size: 2vmin;
+    transition: color 0.3s ease;
+}
+button.category.selected.development > p {
+    color: #1daffc;
+}
+button.category.selected.design > p {
+    color: #7c66ff;
+}
+button.category.selected.illustration > p {
+    color: #00d684;
 }
 button#about-back, button#contact-back {
     color: #000000;
+}
+
+@media (max-width: 902px) {
+    #tags-list {
+        height: 30vh;
+        flex-direction: column;
+    }
+}
+@media (max-width: 500px) {
+    button.category > p, button.about > p, button.contact > p {
+        font-size: 3vmin;
+    }
 }
