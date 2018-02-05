@@ -12,7 +12,7 @@ import mercedes2 from './media/mercedes/2.png';
 import headerMoana from './media/moana/moana_mock.mp4';
 const about = <div>
     <p>
-        Hello! I'm Evan Fuller. I'm the cofounder and chief marketing officer of <a href="http://brinkbit.com">Brinkbit</a>, a company I founded to make game development more accessible. I lead Brinkbit's integrations team, which provides game design and development services for enterprise clients using our API.
+        I'm cofounder and chief marketing officer of <a href="http://brinkbit.com">Brinkbit</a>, a company I founded to make game development more accessible. I lead Brinkbit's integrations team, which provides game design and development services for enterprise clients using our API.
     </p>
     <p>
         At AOL and Millennial Media, I designed and developed interactive mobile ads for brands like PBS, Disney, Mercedes-Benz, Levi, and CitiBank.
@@ -30,7 +30,7 @@ export const config = {
     ],
     about: {
         headshot,
-        title: '',
+        title: 'Hello! I\'m Evan Fuller.',
         description: about,
     },
     contact: {
