@@ -30,7 +30,7 @@ export const config = {
     ],
     about: {
         headshot,
-        title: 'About',
+        title: '',
         description: about,
     },
     contact: {

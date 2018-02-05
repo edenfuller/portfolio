@@ -78,7 +78,7 @@
     position: absolute;
     overflow-y: hidden;
     top: 0;
-    transition: all 0.5s ease;
+    transition: opacity 0.5s ease;
 }
 
 #entry-master.hidden, #about-master.hidden, #contact-master.hidden {
@@ -130,11 +130,20 @@
 #about-description-holder {
     bottom: 0;
     height: 50vh;
+    width: 100vw;
     position: absolute;
-    padding: 4vmax;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+#about-description {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    max-width: 768px;
+    text-align: justify;
 }
 /* header */
 
@@ -424,12 +433,15 @@ p.gallery-description {
 }
 
 .thumbnail-content-holder {
-    clip-path: polygon(50% 0%, 100% 20%, 99% 80%, 50% 100%, 0 80%, 0 20%);
+    clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0 80%, 0 20%);
     overflow: hidden;
-    height: 100%;
-    width: 100%;
+    height: 100.5%;
+    width: 100.5%;
+    top: -0.5%;
+    left: -0.5%;
     margin: 0;
     padding: 0;
+
 }
 .thumbnail.match {
     transform: scale(1, 1);
@@ -458,7 +470,7 @@ button.thumbnail-button {
 }
 
 button#entry-back, button#about-back, button#contact-back {
-    position: absolute;
+    position: fixed;
     height: 7vmax;
     width: 7vmax;
     top: 2vmax;
@@ -473,8 +485,8 @@ button#entry-back, button#about-back, button#contact-back {
 
 img.thumbnail-preview, img.thumbnail-hover {
     position: absolute;
-    height: 100%;
-    max-width: 100%;
+    height: 98%;
+    max-width: 98%;
     top: 0;
     left: 0;
     margin: 0;
@@ -756,6 +768,10 @@ button#about-back, button#contact-back {
     #tags-list {
         height: 30vh;
         flex-direction: column;
+    }
+    #about-description-holder {
+        top: 40vh;
+        font-size: 2vmax;
     }
 }
 @media (max-width: 500px) {
