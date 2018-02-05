@@ -39,7 +39,7 @@ export const config = {
     },
     entries: [
          {
-            color: 'pink',
+            color: 'purple',
             thumbnail: testThumb,
             title: "Mercedes E-Class Gallery",
             role: "Designer, Developer",
@@ -99,7 +99,7 @@ export const config = {
            ],
        },
        {
-          color: 'orange',
+          color: 'green',
           thumbnail: testThumb,
           title: "Mercedes E-Class (Entry 3)",
           role: "Developer, Illustrator",
@@ -159,7 +159,7 @@ export const config = {
          ],
       },
       {
-        color: 'orange',
+        color: 'green',
 
         thumbnail: mercedesThumb,
         title: "Mercedes E-Class (Entry 5)",
@@ -221,7 +221,7 @@ export const config = {
        ],
       },
       {
-         color: 'pink',
+         color: 'purple',
          thumbnail: mercedesThumb,
          title: "Mercedes E-Class (Entry 7)",
          role: "Developer",
@@ -280,7 +280,7 @@ export const config = {
       ],
      },
      {
-        color: 'pink',
+        color: 'purple',
         thumbnail: mercedesThumb,
         title: "Mercedes E-Class (Entry 9)",
         role: "Developer",

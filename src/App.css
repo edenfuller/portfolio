@@ -155,14 +155,14 @@
     justify-content: center;
     position: relative;
 }
-.pink {
-    background-color: #ff1d84;
+.purple {
+    background-color: #7c66ff;
 }
 .blue {
-    background-color: #00afd8;
+    background-color: #1daffc;
 }
-.orange {
-    background-color: #ff8827;
+.green {
+    background-color: #00d684;
 }
 #entry-header-holder {
     height: 65vmin;
