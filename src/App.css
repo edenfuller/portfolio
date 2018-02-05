@@ -432,10 +432,10 @@ p.gallery-description {
 */
 
 .thumbnail {
+    width: 6vmax;
     height: 16vmax;
     margin: 0 0.5vmax;
     padding: 0;
-    width: 6vmax;
     position: relative;
     transform: scale(0.85, 0.85);
     opacity: 1;
@@ -534,19 +534,14 @@ img.thumbnail-preview {
         opacity: 0;
     }
 }
-img.thumbnail-hover:hover {
-    transition: all 1s;
-    animation: hoverReveal 1s ease both;
+img.thumbnail-hover {
+    transform: translate3d(10%, 10%, 0) scale(1.25, 1.25);
+    opacity: 0;
+    transition: all 0.7s ease;
 }
-@keyframes hoverReveal {
-    from {
-        transform: translate3d(10%, 10%, 0) scale(1.25, 1.25);
-        opacity: 0;
-    }
-    to {
-        transform: translate3d(0, 0, 0) scale(1, 1);
-        opacity: 1;
-    }
+img.thumbnail-hover:hover {
+    transform: translate3d(0, 0, 0) scale(1, 1);
+    opacity: 1;
 }
 
 .row:nth-child(1) .thumbnail:nth-child(1) .thumbnail-content-holder img.thumbnail-preview {
@@ -887,4 +882,14 @@ button#about-back, button#contact-back {
     button.category > p, button.about > p, button.contact > p {
         font-size: 3vmin;
     }
+}
+@media (min-width: 1500px) {
+    .thumbnail {
+        width: 9.375vmin;
+        height: 25vmin;
+    }
+    .row {
+        height: 25vmin;
+    }
+
 }
