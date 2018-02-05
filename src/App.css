@@ -453,6 +453,10 @@ button {
     color: #ffffff;
 }
 
+button.thumbnail-button {
+    left: 0;
+}
+
 button#entry-back, button#about-back, button#contact-back {
     position: absolute;
     height: 7vmax;

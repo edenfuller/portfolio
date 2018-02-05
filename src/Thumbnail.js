@@ -48,7 +48,7 @@ export class Thumbnail extends Component {
                 <img alt="" src={color_design} className={classDesign} />
                 <img alt="" src={color_dev} className={classDev} />
                 <img alt="thumbnail" src={entry.thumbnail} className="thumbnail-preview" />
-                <button
+                <button class="thumbnail-button"
                     onClick={( e ) => {
                         this.selectEntry(this.props.id);
 
