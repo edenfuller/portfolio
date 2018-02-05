@@ -21,6 +21,17 @@ const about = <div>
         I've published two young adult novels: <em>Mutt</em> and <em>Stray.</em>
     </p>
 </div>;
+const contact = <div>
+    <p>
+        <a className="contact-link" href="mailto:evan@brinkbit.com">e-mail</a>
+    </p>
+    <p>
+        <a className="contact-link" href="https://www.linkedin.com/in/evanfullerdesign/">LinkedIn</a>
+    </p>
+    <p>
+        <a className="contact-link" href="https://github.com/equinoxfires">GitHub</a>
+    </p>    
+</div>
 export const config = {
     logo: logo,
     categories: [
@@ -34,8 +45,8 @@ export const config = {
         description: about,
     },
     contact: {
-        title: 'Contact',
-        description: 'Template for Contact panel',
+        title: 'Let\'s Connect',
+        description: contact,
     },
     entries: [
          {

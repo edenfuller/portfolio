@@ -142,7 +142,21 @@
     max-width: 768px;
     text-align: justify;
 }
-/* header */
+
+#contact-holder {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+a.contact-link {
+    font-size: 3vmin;
+    font-family: 'Moon';
+}
+/* ///////////////////ENTRY/////////////////// */
 
 #entry-header {
     width: 100vw;

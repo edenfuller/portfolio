@@ -15,14 +15,16 @@ export class Contact extends Component {
         const description = <div id="contact-description-holder"><p  id="contact-description">{config.contact.description}</p></div>
         return (
             <div className={contactVisible} id="contact-master">
-                <button id="contact-back"
-                    onClick={( e ) => {
-                        this.toggleContact();
-                    }}
-                > +
-                </button>
-                {title}
-                {description}
+                <div id="contact-holder">
+                    <button id="contact-back"
+                        onClick={( e ) => {
+                            this.toggleContact();
+                        }}
+                    > +
+                    </button>
+                    {title}
+                    {description}
+                </div>
             </div>
         );
     }
