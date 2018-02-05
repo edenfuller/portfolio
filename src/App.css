@@ -761,7 +761,7 @@ button#about-back, button#contact-back {
     color: #000000;
 }
 
-@media (max-width: 902px) {
+@media (max-width: 768px) {
     #tags-list {
         height: 30vh;
         flex-direction: column;
