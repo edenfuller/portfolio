@@ -592,20 +592,20 @@ img.color {
 */
 
 img.color-design.illustrate,
-img.color-illustrate.develop,
-img.color-illustrate.design,
+img.color-illustration.develop,
+img.color-illustration.design,
 img.color-dev.illustrate,
 img.color-dev.design {
     opacity: 0;
 }
 img.color-design.design,
 img.color-dev.develop,
-img.color-illustrate.illustrate {
+img.color-illustration.illustrate {
     opacity: 1;
 }
 
 img.color-dev.design.develop,
-img.color-illustrate.design.illustrate {
+img.color-illustration.design.illustrate {
     animation: color-1-2 6s 0s ease infinite;
 }
 img.color-design.design.develop,
@@ -613,14 +613,112 @@ img.color-design.design.illustrate {
     animation: color-2-2 6s 0s ease infinite;
 }
 img.color-design.design.develop.illustrate {
-    animation: color-1-2 9s 6s ease infinite;
+    animation: color-3-1 9s 0s ease infinite;
 }
 img.color-dev.design.develop.illustrate {
-    animation: color-1-2 9s 3s ease infinite;
+    animation: color-3-2 9s 0s ease infinite;
 }
-img.color-illustrate.design.develop.illustrate {
-    animation: color-1-2 9s 0s ease infinite;
+img.color-illustration.design.develop.illustrate {
+    animation: color-3-3 9s 0s ease infinite;
+
 }
+
+@keyframes color-3-1 {
+    from {
+        transform: scale(0,0);
+    }
+    20% {
+        transform: scale(0,0);
+    }
+    30% {
+        transform: scale(1,1);
+    }
+    to {
+        transform: scale(1,1);
+    }
+}
+
+@keyframes color-3-2 {
+    from {
+        transform: scale(0,0);
+    }
+    55% {
+        transform: scale(0,0);
+    }
+    65% {
+        transform: scale(1,1);
+    }
+    to {
+        transform: scale(1,1);
+    }
+}
+
+@keyframes color-3-3 {
+    from {
+        transform: scale(1,1);
+        z-index: 0;
+    }
+    88% {
+        transform: scale(1,1);
+        z-index: 0;
+    }
+    89% {
+        transform: scale(0,0);
+        z-index: 0;
+    }
+    90% {
+        transform: scale(0,0);
+        z-index: 10;
+    }
+    to {
+        transform: scale(1,1);
+        z-index: 10;
+    }
+}
+
+/*
+@keyframes color-3-1 {
+ from {
+     transform: scale(1,1);
+ }
+ 40% {
+     transform: scale(1,1);
+ }
+ 47% {
+     transform: scale(0,0);
+ }
+ 53% {
+     transform: scale(0,0);
+ }
+ 60% {
+     transform: scale(1,1);
+ }
+ to {
+     transform: scale(1,1);
+ }
+}
+
+@keyframes color-3-2 {
+ from {
+     transform: scale(1,1);
+ }
+ 20% {
+     transform: scale(1,1);
+ }
+ 27% {
+     transform: scale(0,0);
+ }
+ 73% {
+     transform: scale(0,0);
+ }
+ 80% {
+     transform: scale(1,1);
+ }
+ to {
+     transform: scale(1,1);
+ }
+} */
+
 @keyframes color-1-2 {
  from {
      transform: scale(0,0);
