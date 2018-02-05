@@ -745,7 +745,7 @@ button.category > p {
     font-family: 'Moon';
     padding-top: 0.1vmin;
     color: #ffffff;
-    font-size: 2vmin;
+    font-size: 2.5vmin;
     transition: color 0.3s ease;
 }
 button.category.selected.develop > p {
