@@ -19,7 +19,7 @@ export class Contact extends Component {
                     onClick={( e ) => {
                         this.toggleContact();
                     }}
-                > Back
+                > +
                 </button>
                 {title}
                 {description}

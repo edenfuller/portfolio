@@ -5,6 +5,7 @@
 
 .App {
   text-align: center;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -98,7 +99,43 @@
     height: 100vh;
 }
 
+#about-title, #contact-title {
+    font-family: 'Moon';
+    position: absolute;
+    top: 10vh;
+    left: 5vw;
+    margin: 0;
+}
+/* about */
+#headshot-holder {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
+#headshot {
+    height: 50vmin;
+    width: 50vmin;
+    top: 4vmax;
+    position: absolute;
+}
+#about-holder {
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+#about-description-holder {
+    bottom: 0;
+    height: 50vh;
+    position: absolute;
+    padding: 4vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* header */
 
 #entry-header {
@@ -410,7 +447,6 @@ button {
     margin: 0;
     padding: 0;
     top: 0;
-    left: 0;
     outline: none;
     border: none;
     background: none;
@@ -419,16 +455,14 @@ button {
 
 button#entry-back, button#about-back, button#contact-back {
     position: absolute;
-    top: 4%;
-    left: 2%;
-    height: 5vmin;
-    width: 12vmin;
-    background-position: center center;
-    background-size: 100% 100%;
-    text-transform: uppercase;
-    font-family: 'Moon';
+    height: 7vmax;
+    width: 7vmax;
+    top: 2vmax;
+    right: 2vmax;
+    font-family: 'Poppins';
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 7vmax;
+    transform: rotateZ(-135deg);
     margin: 0;
     padding: 0;
 }

@@ -62,7 +62,7 @@ export class Entry extends Component {
                         onClick={( e ) => {
                             this.hideEntry();
                         }}
-                    > Back
+                    > +
                     </button>
                     <div className="entry" id="entry-header-holder">
                         <img src={ entry.headerFrame } id="entry-frame" alt="device frame" />

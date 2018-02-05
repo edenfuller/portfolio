@@ -1,13 +1,26 @@
+import React, { Component } from 'react';
 import logo from './media/logo.svg';
 import tabletPortrait from './media/tablet_portrait.png';
 import tabletLandscape from './media/tablet_landscape.png';
 import headerMercedes from './media/mercedes/mercedes.gif';
 import mercedesThumb from './media/mercedes/thumb.png';
+import headshot from './media/headshot.png';
 import testThumb from './media/testThumb.png';
 import mercedes0 from './media/mercedes/0.png';
 import mercedes1 from './media/mercedes/1.png';
 import mercedes2 from './media/mercedes/2.png';
 import headerMoana from './media/moana/moana_mock.mp4';
+const about = <div>
+    <p>
+        Hello! I'm Evan Fuller. I'm the cofounder and chief marketing officer of <a href="http://brinkbit.com">Brinkbit</a>, a company I founded to make game development more accessible. I lead Brinkbit's integrations team, which provides game design and development services for enterprise clients using our API.
+    </p>
+    <p>
+        At AOL and Millennial Media, I designed and developed interactive mobile ads for brands like PBS, Disney, Mercedes-Benz, Levi, and CitiBank.
+    </p>
+    <p>
+        I've published two young adult novels: <em>Mutt</em> and <em>Stray.</em>
+    </p>
+</div>;
 export const config = {
     logo: logo,
     categories: [
@@ -16,8 +29,9 @@ export const config = {
         'illustrate',
     ],
     about: {
+        headshot,
         title: 'About',
-        description: 'Template for About panel',
+        description: about,
     },
     contact: {
         title: 'Contact',

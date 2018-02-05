@@ -6,6 +6,7 @@ export class About extends Component {
         this.state = props.state;
         this.events = props.events;
         this.toggleAbout = props.toggleAbout;
+        this.toggleContact = props.toggleContact;
     }
 
     render() {
@@ -14,15 +15,21 @@ export class About extends Component {
         const title = <div id="about-title-holder"><h1  id="about-title">{config.about.title}</h1></div>
         const description = <div id="about-description-holder"><p  id="about-description">{config.about.description}</p></div>
         return (
+
             <div className={aboutVisible} id="about-master">
-                <button id="about-back"
-                    onClick={( e ) => {
-                        this.toggleAbout();
-                    }}
-                > Back
-                </button>
-                {title}
-                {description}
+                <div id="about-holder">
+                    <div id="headshot-holder">
+                        <img id="headshot" src={config.about.headshot} />
+                    </div>
+                    <button id="about-back"
+                        onClick={( e ) => {
+                            this.toggleAbout();
+                        }}
+                    > +
+                    </button>
+                    {title}
+                    {description}
+                </div>
             </div>
         );
     }

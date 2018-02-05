@@ -54,7 +54,7 @@ class App extends Component {
         <Portfolio state={this.state} selectEntry={this.selectEntry} />
         <Nav state={this.state} selectCategory={this.selectCategory} toggleContact={this.toggleContact} toggleAbout={this.toggleAbout} />
         <Entry state={this.state} hideEntry={this.hideEntry} />
-        <About state={this.state} toggleAbout={this.toggleAbout} />
+        <About state={this.state} toggleAbout={this.toggleAbout} toggleContact={this.toggleContact} />
         <Contact state={this.state} toggleContact={this.toggleContact} />
       </div>
     );
