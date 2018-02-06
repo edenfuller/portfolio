@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis|Poppins:100,400|Six+Caps');
 @import url("https://use.typekit.net/ofs2dps.css");
-@import url('/media/fonts/Moon Bold.otf|Moon:Bold');
-@import url('/media/fonts/Moon Light.otf|Moon:Light');
 
 .App {
   text-align: center;
@@ -40,7 +38,7 @@
     outline: none;
     border: none;
     color: #ffffff;
-    font-family: "Moon";
+    font-family: "houschka-rounded";
     background: none;
     font-size: 2vmin;
 }
@@ -100,7 +98,7 @@
 }
 
 #about-title, #contact-title {
-    font-family: 'Moon';
+    font-family: 'houschka-rounded';
     margin: 0;
     padding: 2vmax;
 }
@@ -154,7 +152,7 @@
 }
 a.contact-link {
     font-size: 3vmin;
-    font-family: 'Moon';
+    font-family: 'houschka-rounded';
 }
 /* ///////////////////ENTRY/////////////////// */
 
@@ -204,7 +202,7 @@ a.contact-link {
 }
 #entry-header-text {
     color: #ffffff;
-    font-family: 'Moon', 'Poppins', sans-serif;
+    font-family: 'houschka-rounded', 'Poppins', sans-serif;
     font-weight: 100;
     font-size: 6vmin;
     text-transform: uppercase;
@@ -256,7 +254,7 @@ p {
     font-family: 'Poppins';
 }
 h3 {
-    font-family: 'Moon', 'Poppins', sans-serif;
+    font-family: 'houschka-rounded', 'Poppins', sans-serif;
     font-weight: lighter;
     font-size: 1.7em;
     margin-bottom: 0.2em;
@@ -482,13 +480,13 @@ button.thumbnail-button {
 
 button#entry-back, button#about-back, button#contact-back {
     position: fixed;
-    height: 7vmax;
-    width: 7vmax;
+    height: 4vmax;
+    width: 4vmax;
     top: 2vmax;
     right: 2vmax;
-    font-family: 'Poppins';
-    font-weight: bold;
-    font-size: 7vmax;
+    font-family: 'houschka-rounded';
+    font-weight: light;
+    font-size: 4vmax;
     transform: rotateZ(-135deg);
     margin: 0;
     padding: 0;
@@ -840,13 +838,13 @@ button.category, button.about, button.contact {
 
 button.about > p, button.contact > p {
     font-size: 2.5vmin;
-    font-family: 'Moon';
+    font-family: 'houschka-rounded';
     font-weight: bold;
     padding-top: 0.1vmin;
 }
 
 button.category > p {
-    font-family: 'Moon';
+    font-family: 'houschka-rounded';
     padding-top: 0.1vmin;
     color: #ffffff;
     font-size: 2.5vmin;
@@ -866,6 +864,10 @@ padding-top: 0.1vmin;
 }
 button#about-back, button#contact-back {
     color: #000000;
+}
+
+button, button > p {
+    text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
