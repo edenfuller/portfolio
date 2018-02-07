@@ -884,7 +884,7 @@ button, button > p {
     text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     #buttons-list {
         height: 18vh;
         flex-direction: column;
@@ -893,23 +893,29 @@ button, button > p {
     #tags-list {
         width: 80vw;
     }
+    li.tagsItem {
+        padding: 1vw;
+    }
     #about-description-holder {
         top: 40vh;
         font-size: 2vmax;
     }
 }
-@media (max-width: 500px) {
+@media only screen and (max-width: 500px) {
     button.category > p, button.about > p, button.contact > p {
         font-size: 3vmin;
-    }
-    li.tagsItem {
-        padding: 1vw;
     }
     #tags-list {
         width: 100vw;
     }
 }
-@media (min-width: 1500px) {
+@media only screen and (min-width: 1224px) {
+    button.category > p, button.about > p, button.contact > p {
+        font-size: 2vmax;
+    }
+
+}
+@media only screen and (min-width: 1500px) {
     .thumbnail {
         width: 9.375vmin;
         height: 25vmin;
