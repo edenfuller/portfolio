@@ -4,6 +4,7 @@ import tabletPortrait from './media/tablet_portrait.png';
 import tabletLandscape from './media/tablet_landscape.png';
 import phonePortrait from './media/phone_portrait.png';
 import phoneLandscape from './media/phone_landscape.png';
+import empty from './media/empty.png';
 import laptop from './media/laptop.png';
 import headshot from './media/headshot.png';
 import testThumb from './media/testThumb.png';
@@ -36,6 +37,15 @@ import cedarThumb from './media/cedar/thumb.jpg';
 import cedar0 from './media/cedar/0.png';
 import cedar1 from './media/cedar/1.png';
 import cedar2 from './media/cedar/2.png';
+
+import masnHeader from './media/masn/header.gif';
+import masnThumb from './media/masn/thumb.jpg';
+import masn0 from './media/masn/0.png';
+import masn1 from './media/masn/1.png';
+
+import illustrationHeader from './media/illustration/moonWitch.jpg';
+import illustrationThumb from './media/illustration/thumb.jpg';
+import illustration0 from './media/illustration/temple.png';
 
 const about = <div>
     <p>
@@ -185,12 +195,13 @@ The app uses a simple config object stored in config.js to set the author name
          ],
       },
       {
-        color: 'green',
+        color: 'purple',
 
         thumbnail: cedarThumb,
         title: "Cedar Fair Photoshoot",
-        role: "Developer",
+        role: "Designer/Developer",
         tags: [
+            'design',
             'develop',
         ],
         project: "I designed and developed photoshoot ad units for Cedar Fair's family of theme parks for the 2016 Halloween season. The ad lets the user take a photo, apply one of three filters (zombie, witch, or buried alive), and then share the creation to social media.",
@@ -213,122 +224,27 @@ The app uses a simple config object stored in config.js to set the author name
       },
       {
        color: 'blue',
-       thumbnail: mercedesThumb,
-       title: "Mercedes E-Class (Entry 6)",
-       role: "Art Director, Prop Artist",
+       thumbnail: masnThumb,
+       title: "MASN XML Ad",
+       role: "Designer/Developer",
        tags: [
            'design',
-           'illustrate',
+           'develop',
        ],
-       project: "Mobile rebuild of a desktop rich media advertisement rendered in a 3D environment. The game will be replace employee orientantion for a major employer in Maryland.  The 3D library exceeded the file weight limit of 300KB initial load and 1MB maximum load for all images and code. I worked with the client to develop a mobile advertisement that recreated the look and feel of the original using only web elements.",
+       project: "I designed and developed a series of Orioles and Nationals ads for MASN. The ads pull a hashtag, away team logo, and game time from an XML feed, allowing the campaign to run throughout the season with no further updates after launch.",
        date: 2016,
        headerType: 'image',
        headerSrc: headerMercedes,
-       headerClass: 'header-tablet-landscape',
+       headerClass: 'header-tablet-portrait',
        headerFrame: tabletPortrait,
-       github: 'https://github.com',
-       demo: 'https://google.com',
        gallery: [
            {
-               src: moanaHeader,
-               type: 'video',
-               description: 'this is a description',
+               src: masn0,
            },
            {
-               src: mercedes1,
-           },
-           {
-               src: mercedes2,
+               src: masn1,
            },
        ],
       },
-      {
-         color: 'purple',
-         thumbnail: mercedesThumb,
-         title: "Mercedes E-Class (Entry 7)",
-         role: "Developer",
-         tags: [
-             'develop',
-         ],
-         project: "Mobile rebuild of a desktop rich media advertisement rendered in a 3D environment. The 3D library exceeded the file weight limit of 300KB initial load and 1MB maximum load for all images and code. I worked with the client to develop a mobile advertisement that recreated the look and feel of the original using only web elements.",
-         date: 2016,
-         headerType: 'image',
-         headerSrc: headerMercedes,
-         headerClass: 'header-tablet-landscape',
-         headerFrame: tabletPortrait,
-         github: 'https://github.com',
-         gallery: [
-             {
-                 src: mercedes0,
-                 type: 'image',
-             },
-             {
-                 src: mercedes1,
-             },
-             {
-                 src: mercedes2,
-             },
-         ],
-     },
-     {
-      color: 'blue',
-
-      thumbnail: mercedesThumb,
-      title: "Mercedes E-Class (Entry 8)",
-      role: "Illustrator",
-      tags: [
-          'illustrate',
-      ],
-      project: "Mobile rebuild of a desktop rich media advertisement rendered in a 3D environment. The 3D library exceeded the file weight limit of 300KB initial load and 1MB maximum load for all images and code. I worked with the client to develop a mobile advertisement that recreated the look and feel of the original using only web elements.",
-      date: 2016,
-      headerType: 'image',
-      headerSrc: headerMercedes,
-      headerClass: 'header-tablet-landscape',
-      headerFrame: tabletPortrait,
-      github: 'https://github.com',
-      demo: 'https://google.com',
-      gallery: [
-          {
-              src: moanaHeader,
-              type: 'video',
-              description: 'this is a description',
-          },
-          {
-              src: mercedes1,
-          },
-          {
-              src: mercedes2,
-          },
-      ],
-     },
-     {
-        color: 'purple',
-        thumbnail: mercedesThumb,
-        title: "Mercedes E-Class (Entry 9)",
-        role: "Developer",
-        tags: [
-            'develop',
-        ],
-        project: "Mobile rebuild of a desktop rich media advertisement rendered in a 3D environment. The 3D library exceeded the file weight limit of 300KB initial load and 1MB maximum load for all images and code. I worked with the client to develop a mobile advertisement that recreated the look and feel of the original using only web elements.",
-        date: 2016,
-        headerType: 'image',
-        headerSrc: headerMercedes,
-        headerClass: 'header-tablet-landscape',
-        headerFrame: tabletPortrait,
-        github: 'https://github.com',
-        demo: 'https://github.com',
-        gallery: [
-            {
-                src: mercedes0,
-                type: 'image',
-            },
-            {
-                src: mercedes1,
-            },
-            {
-                src: mercedes2,
-            },
-        ],
-    },
     ]
 }
