@@ -23,7 +23,6 @@ class App extends Component {
         for ( let i = 0; i < config.categories.length; i += 1) {
             this.state.tags[config.categories[i]] = false;
         }
-        console.log(this.state);
         this.selectEntry = this.selectEntry.bind( this );
         this.hideEntry = this.hideEntry.bind( this );
         this.selectCategory = this.selectCategory.bind( this );
@@ -39,7 +38,6 @@ class App extends Component {
         const newTags = this.state.tags;
         newTags[tag] = !newTags[tag];
         this.setState(newTags);
-        console.log(this.state);
     }
     hideEntry() {
         this.setState({ showEntry: false });

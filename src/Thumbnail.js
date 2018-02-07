@@ -19,7 +19,6 @@ export class Thumbnail extends Component {
         // otherwise, check to see if any value of entry.tags matches any true value of state.tags
         else if (entry.tags) {
             for (let j = 0; j < entry.tags.length; j += 1) {
-                console.log(entry.tags[j]);
                 if(state.tags[entry.tags[j]]) {
                     tagMatch = 'match';
                     break;

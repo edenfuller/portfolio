@@ -27,7 +27,6 @@ export class Entry extends Component {
             }
             gallery.push(<div key={i + "-item-holder"} className="gallery-item-holder">{galleryElements}</div>);
         }
-        console.log(gallery);
         if ( this.state.showEntry === true) {
             // for(let i = 0; i < this.state.entry.gallery.length; i += 1){
             //     const img[i] = import './media/' + this.state.entry.folder + i + '.png';
