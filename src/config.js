@@ -2,14 +2,41 @@ import React, { Component } from 'react';
 import logo from './media/logo.svg';
 import tabletPortrait from './media/tablet_portrait.png';
 import tabletLandscape from './media/tablet_landscape.png';
-import headerMercedes from './media/mercedes/mercedes.gif';
-import mercedesThumb from './media/mercedes/thumb.png';
+import phonePortrait from './media/phone_portrait.png';
+import phoneLandscape from './media/phone_landscape.png';
+import laptop from './media/laptop.png';
 import headshot from './media/headshot.png';
 import testThumb from './media/testThumb.png';
+
+
+import headerMercedes from './media/mercedes/mercedes.gif';
+import mercedesThumb from './media/mercedes/thumb.png';
 import mercedes0 from './media/mercedes/0.png';
 import mercedes1 from './media/mercedes/1.png';
 import mercedes2 from './media/mercedes/2.png';
-import headerMoana from './media/moana/moana_mock.mp4';
+
+import moanaHeader from './media/moana/moana_header.mp4';
+import moanaThumb from './media/moana/thumb.jpg';
+import moana0 from './media/moana/0.png';
+import moana1 from './media/moana/1.png';
+import moana2 from './media/moana/2.png';
+
+import headerTimeline from './media/timeline/publication-timeline.mp4'
+import timelineThumb from './media/timeline/thumb.png';
+import timeline0 from './media/timeline/0.png';
+
+import wosHeader from './media/wos/header.jpg';
+import wosThumb from './media/wos/thumb.png';
+import wos0 from './media/wos/0.png';
+import wos1 from './media/wos/1.png';
+import wos2 from './media/wos/2.png';
+
+import cedarHeader from './media/cedar/header.gif';
+import cedarThumb from './media/cedar/thumb.jpg';
+import cedar0 from './media/cedar/0.png';
+import cedar1 from './media/cedar/1.png';
+import cedar2 from './media/cedar/2.png';
+
 const about = <div>
     <p>
         I'm cofounder and chief marketing officer of <a href="http://brinkbit.com">Brinkbit</a>, a company I founded to make game development more accessible. I lead Brinkbit's integrations team, which provides game design and development services for enterprise clients using our API.
@@ -50,8 +77,8 @@ export const config = {
     },
     entries: [
          {
-            color: 'purple',
-            thumbnail: testThumb,
+            color: 'blue',
+            thumbnail: mercedesThumb,
             title: "Mercedes E-Class Gallery",
             role: "Designer, Developer",
             tags: [
@@ -62,9 +89,8 @@ export const config = {
             date: 2016,
             headerType: 'image',
             headerSrc: headerMercedes,
-            headerClass: 'header-tablet-landscape',
+            headerClass: 'header-tablet-portrait',
             headerFrame: tabletPortrait,
-            github: 'https://github.com',
             gallery: [
                 {
                     src: mercedes0,
@@ -81,124 +107,107 @@ export const config = {
         {
            color: 'blue',
 
-           thumbnail: mercedesThumb,
+           thumbnail: timelineThumb,
            title: "publication-timeline",
            role: "Designer",
            tags: [
-               'design',
+               'develop',
            ],
            project: `publication-timeline is an interactive CV for use by professionals in the sciences, medicine, and academia. The app allows a user to browse a large number of the author's published works in chronological order and filter publications by type and category.
 
 The app uses a simple config object stored in config.js to set the author name and details, as well as a list of publication types and categories. The config pulls a publication list from data.js, which is structured to receive data from a simple spreadsheet processed through one of the many CSV-to-JSON converters available online.`,
-           date: 2016,
-           headerType: 'image',
-           headerSrc: headerMercedes,
-           headerClass: 'header-tablet-landscape',
-           headerFrame: tabletPortrait,
-           github: 'https://github.com',
-           demo: 'https://google.com',
+           date: 2018,
+           headerType: 'video',
+           headerSrc: headerTimeline,
+           headerClass: 'header-laptop',
+           headerFrame: laptop,
+           github: 'https://github.com/equinoxfires/publication-timeline',
+           demo: 'https://equinoxfires.github.io/publication-timeline/',
            gallery: [
                {
-                   src: headerMoana,
-                   type: 'video',
-                   description: 'this is a description',
-               },
-               {
-                   src: mercedes1,
-               },
-               {
-                   src: mercedes2,
+                   src: timeline0,
                },
            ],
        },
        {
           color: 'green',
-          thumbnail: testThumb,
-          title: "Mercedes E-Class (Entry 3)",
-          role: "Developer, Illustrator",
+          thumbnail: wosThumb,
+          title: "E-Learning Game",
+          role: "Product Manager, Front-end Developer, Art Director, Prop Artist, Animator",
           tags: [
               'design',
               'develop',
               'illustrate',
           ],
-          project: "Mobile rebuild of a desktop rich media advertisement rendered in a 3D environment. The 3D library exceeded the file weight limit of 300KB initial load and 1MB maximum load for all images and code. I worked with the client to develop a mobile advertisement that recreated the look and feel of the original using only web elements.",
-          date: 2016,
+          project: "This responsive web and mobile game was created for one of our enterprise clients. This is a forthcoming project and release is just around the corner; more info soon!",
+          date: 2017,
           headerType: 'image',
-          headerSrc: headerMercedes,
-          headerClass: 'header-tablet-landscape',
+          headerSrc: wosHeader,
+          headerClass: 'header-tablet-portrait',
           headerFrame: tabletPortrait,
-          github: 'https://github.com',
-          demo: 'https://google.com',
           gallery: [
               {
-                  src: headerMoana,
-                  type: 'video',
-                  description: 'this is a description',
+                  src: wos0,
+                  description: 'a few of my prop illustrations for the game',
               },
               {
-                  src: mercedes1,
+                  src: wos1,
               },
               {
-                  src: mercedes2,
+                  src: wos2,
               },
           ],
       },
       {
-         color: 'blue',
-         thumbnail: mercedesThumb,
-         title: "Mercedes E-Class (Entry 4)",
+         color: 'purple',
+         thumbnail: moanaThumb,
+         title: "Disney's Moana: Explore Oceania",
          role: "Designer",
          tags: [
              'design',
          ],
-         project: "Mobile rebuild of a desktop rich media advertisement rendered in a 3D environment. The 3D library exceeded the file weight limit of 300KB initial load and 1MB maximum load for all images and code. I worked with the client to develop a mobile advertisement that recreated the look and feel of the original using only web elements.",
+         project: "I contributed this presale design to a winning bid for a campaign to promote the theatrical release of Disney's Moana. The design taps several of Millennial Media's rich-media features, including an expandable banner, gyroscope/accelorometer control, and nested galleries.",
          date: 2016,
-         headerType: 'image',
-         headerSrc: headerMercedes,
-         headerClass: 'header-tablet-landscape',
-         headerFrame: tabletPortrait,
-         github: 'https://github.com',
+         headerType: 'video',
+         headerSrc: moanaHeader,
+         headerClass: 'header-phone-landscape',
+         headerFrame: phoneLandscape,
          gallery: [
              {
-                 src: mercedes0,
-                 type: 'image',
+                 src: moana0,
              },
              {
-                 src: mercedes1,
+                 src: moana1,
              },
              {
-                 src: mercedes2,
+                 src: moana2,
              },
          ],
       },
       {
         color: 'green',
 
-        thumbnail: mercedesThumb,
-        title: "Mercedes E-Class (Entry 5)",
+        thumbnail: cedarThumb,
+        title: "Cedar Fair Photoshoot",
         role: "Developer",
         tags: [
             'develop',
         ],
-        project: "Mobile rebuild of a desktop rich media advertisement rendered in a 3D environment. The 3D library exceeded the file weight limit of 300KB initial load and 1MB maximum load for all images and code. I worked with the client to develop a mobile advertisement that recreated the look and feel of the original using only web elements.",
+        project: "I designed and developed photoshoot ad units for Cedar Fair's family of theme parks for the 2016 Halloween season. The ad lets the user take a photo, apply one of three filters (zombie, witch, or buried alive), and then share the creation to social media.",
         date: 2016,
         headerType: 'image',
-        headerSrc: headerMercedes,
-        headerClass: 'header-tablet-landscape',
-        headerFrame: tabletPortrait,
-        github: 'https://github.com',
-        demo: 'https://google.com',
+        headerSrc: cedarHeader,
+        headerClass: 'header-phone-portrait',
+        headerFrame: phonePortrait,
         gallery: [
             {
-                src: headerMoana,
-                type: 'video',
-                description: 'this is a description',
+                src: cedar0,
             },
             {
-                src: mercedes1,
+                src: cedar1,
             },
             {
-                src: mercedes2,
+                src: cedar2,
             },
         ],
       },
@@ -211,7 +220,7 @@ The app uses a simple config object stored in config.js to set the author name
            'design',
            'illustrate',
        ],
-       project: "Mobile rebuild of a desktop rich media advertisement rendered in a 3D environment. The 3D library exceeded the file weight limit of 300KB initial load and 1MB maximum load for all images and code. I worked with the client to develop a mobile advertisement that recreated the look and feel of the original using only web elements.",
+       project: "Mobile rebuild of a desktop rich media advertisement rendered in a 3D environment. The game will be replace employee orientantion for a major employer in Maryland.  The 3D library exceeded the file weight limit of 300KB initial load and 1MB maximum load for all images and code. I worked with the client to develop a mobile advertisement that recreated the look and feel of the original using only web elements.",
        date: 2016,
        headerType: 'image',
        headerSrc: headerMercedes,
@@ -221,7 +230,7 @@ The app uses a simple config object stored in config.js to set the author name
        demo: 'https://google.com',
        gallery: [
            {
-               src: headerMoana,
+               src: moanaHeader,
                type: 'video',
                description: 'this is a description',
            },
@@ -280,7 +289,7 @@ The app uses a simple config object stored in config.js to set the author name
       demo: 'https://google.com',
       gallery: [
           {
-              src: headerMoana,
+              src: moanaHeader,
               type: 'video',
               description: 'this is a description',
           },

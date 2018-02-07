@@ -186,12 +186,37 @@ a.contact-link {
     width: 100%;
     height: 100%;
 }
-.header-tablet-landscape {
+
+.header-tablet-portrait {
     position: absolute;
     height: 83.7%;
     width: auto;
     left: 18.6%;
     top: 8%;
+}
+
+.header-phone-portrait {
+    position: absolute;
+    height: 76.5%;
+    width: auto;
+    left: 27.9%;
+    top: 11.7%;
+}
+
+.header-phone-landscape {
+    position: absolute;
+    height: 42.6%;
+    width: auto;
+    left: 11.9%;
+    top: 29%;
+}
+
+.header-laptop {
+    position: absolute;
+    height: 53.5%;
+    width: auto;
+    left: 7.2%;
+    top: 21.9%;
 }
 
 @media(max-width: 610px) and (orientation: portrait) {
@@ -494,8 +519,8 @@ button#entry-back, button#about-back, button#contact-back {
 
 img.thumbnail-preview, img.thumbnail-hover {
     position: absolute;
-    height: 98%;
-    max-width: 98%;
+    height: 101%;
+    max-width: 101%;
     top: 0;
     left: 0;
     margin: 0;
