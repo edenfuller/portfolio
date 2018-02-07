@@ -505,7 +505,6 @@ img.thumbnail-preview, img.thumbnail-hover {
     opacity: 0;
 }
 
-
 img.thumbnail-preview {
     animation: peekThrough 15s linear infinite both;
 }
@@ -794,11 +793,20 @@ img#logo{
     width: auto;
     position: absolute;
 }
-#tags-list {
+#buttons-list {
     bottom: 0;
     height: 15vh;
     width: 100vw;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+#tags-list {
+    width: 70vw;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -824,11 +832,11 @@ img.nav-button, img.nav-button-white, button.about > p, button.contact > p, butt
     height: 100%;
 }
 img.nav-button-white {
-    transform: scale(0,0);
+    transform: scale(1,1);
     transition: all 0.3s ease;
 }
 button.category.selected > img.nav-button-white {
-transform: scale(1, 1);
+transform: scale(0, 0);
     transition: all 0.3s ease;
 }
 button.category, button.about, button.contact {
@@ -850,19 +858,25 @@ button.category > p {
     font-size: 2.5vmin;
     transition: color 0.3s ease;
 }
-button.category.selected.develop > p {
+button.category.develop > p {
 padding-top: 0.1vmin;
     color: #1daffc;
 }
-button.category.selected.design > p {
+button.category.design > p {
 padding-top: 0.1vmin;
     color: #7c66ff;
 }
-button.category.selected.illustrate > p {
+button.category.illustrate > p {
 padding-top: 0.1vmin;
     color: #00d684;
 }
-button#about-back, button#contact-back {
+button.category.selected > p {
+    padding-top: 0.1vmin;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+button#entry-back, button#about-back, button#contact-back {
     color: #000000;
 }
 
@@ -871,9 +885,13 @@ button, button > p {
 }
 
 @media (max-width: 768px) {
-    #tags-list {
-        height: 30vh;
+    #buttons-list {
+        height: 18vh;
         flex-direction: column;
+        justify-content: space-between;
+    }
+    #tags-list {
+        width: 80vw;
     }
     #about-description-holder {
         top: 40vh;
@@ -883,6 +901,12 @@ button, button > p {
 @media (max-width: 500px) {
     button.category > p, button.about > p, button.contact > p {
         font-size: 3vmin;
+    }
+    li.tagsItem {
+        padding: 1vw;
+    }
+    #tags-list {
+        width: 100vw;
     }
 }
 @media (min-width: 1500px) {

@@ -30,7 +30,7 @@ const contact = <div>
     </p>
     <p>
         <a className="contact-link" href="https://github.com/equinoxfires">GitHub</a>
-    </p>    
+    </p>
 </div>
 export const config = {
     logo: logo,
@@ -45,7 +45,7 @@ export const config = {
         description: about,
     },
     contact: {
-        title: 'Let\'s Connect',
+        title: 'Let\'s connect.',
         description: contact,
     },
     entries: [

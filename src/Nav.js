@@ -27,7 +27,7 @@ export class Nav extends Component {
         return (
             <div id="nav">
                 <img src={config.logo} id="logo" />
-                <ul id="tags-list">
+                <ul id="buttons-list">
                     <li key="button-about" className="about">
                         <button className="about"
                             onClick={( e ) => {
@@ -38,20 +38,22 @@ export class Nav extends Component {
                             <p>about</p>
                         </button>
                     </li>
-                    {config.categories.map((category, i) => (
-                        <li key={i} className="tagsItem">
-                            <button
-                                className={category + " " + categoryMatch[i]}
-                                onClick={( e ) => {
-                                    this.selectCategory( category );
-                                }}
-                            >
-                                <img className={"nav-button nav-button-" + category} key={"nav-button-" + i} alt ="nav button"src={buttons[i]} />
-                                <img className={"nav-button-white nav-button-white" + category} key={"nav-button-white-" + i} alt ={category} src={button_white} />
-                                <p>{ category }</p>
-                            </button>
-                        </li>
-                    ))}
+                    <ul id="tags-list">
+                        {config.categories.map((category, i) => (
+                            <li key={i} className="tagsItem">
+                                <button
+                                    className={category + " " + categoryMatch[i]}
+                                    onClick={( e ) => {
+                                        this.selectCategory( category );
+                                    }}
+                                >
+                                    <img className={"nav-button nav-button-" + category} key={"nav-button-" + i} alt ="nav button"src={buttons[i]} />
+                                    <img className={"nav-button-white nav-button-white" + category} key={"nav-button-white-" + i} alt ={category} src={button_white} />
+                                    <p>{ category }</p>
+                                </button>
+                            </li>
+                        ))}
+                    </ul>
                     <li key="button-contact" className="contact">
                         <button className="contact"
                             onClick={( e ) => {
