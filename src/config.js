@@ -246,5 +246,29 @@ The app uses a simple config object stored in config.js to set the author name
            },
        ],
       },
+      {
+         color: 'green',
+         thumbnail: illustrationThumb,
+         title: "Illustrations",
+         role: "Illustrator",
+         tags: [
+             'illustrate',
+         ],
+         project: "Various illustrations from Brinkbit and personal projects.",
+         date: 2016,
+         headerType: 'image',
+         headerSrc: illustrationHeader,
+         headerClass: 'header-square',
+         headerFrame: empty,
+         gallery: [
+             {
+                 src: illustration0,
+                 type: 'image',
+             },
+             {
+                 src: illustrationHeader,
+             },
+         ],
+     },
     ]
 }
