@@ -234,7 +234,7 @@ The app uses a simple config object stored in config.js to set the author name
        project: "I designed and developed a series of Orioles and Nationals ads for MASN. The ads pull a hashtag, away team logo, and game time from an XML feed, allowing the campaign to run throughout the season with no further updates after launch.",
        date: 2016,
        headerType: 'image',
-       headerSrc: headerMercedes,
+       headerSrc: masnHeader,
        headerClass: 'header-tablet-portrait',
        headerFrame: tabletPortrait,
        gallery: [

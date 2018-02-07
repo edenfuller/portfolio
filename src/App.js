@@ -31,8 +31,10 @@ class App extends Component {
         this.toggleContact = this.toggleContact.bind( this );
     }
     selectEntry(id) {
-        this.setState({ entry: config.entries[id], showEntry: true });
+        this.setState({ entry: config.entries[id] });
+        this.setState({ showEntry: true });
     }
+
     selectCategory(tag) {
         const newTags = this.state.tags;
         newTags[tag] = !newTags[tag];
