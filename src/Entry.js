@@ -36,7 +36,7 @@ export class Entry extends Component {
             }
             const descriptionButtons=[];
             if ( entry.demo ) {
-                const demo = <div id="demo" key="demo-holder"><img alt="" src={button_black} /><a  href={entry.github}><button key="demo" className="description-button">Working Demo</button></a></div>
+                const demo = <div id="demo" key="demo-holder"><img alt="" src={button_black} /><a  href={entry.demo}><button key="demo" className="description-button">Working Demo</button></a></div>
                 descriptionButtons.push(demo);
             }
             if ( entry.github ) {

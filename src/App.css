@@ -25,7 +25,14 @@
     position: relative;
     cursor: pointer;
 }
-#demo a, #github a {
+button#demo, button#github {
+    cursor: pointer;
+}
+
+#button, a {
+
+}
+a#demo,  a#github {
     cursor: pointer;
 }
 #demo img, #github img {
@@ -46,6 +53,7 @@
     font-family: "houschka-rounded";
     background: none;
     font-size: 2vmin;
+    cursor: pointer;
 }
 
 #button-holder {
@@ -564,6 +572,7 @@ img.thumbnail-preview {
 img.thumbnail-hover {
     transform: translate3d(10%, 10%, 0) scale(1.25, 1.25);
     opacity: 0;
+    cursor: pointer;
     transition: all 0.7s ease;
 }
 img.thumbnail-hover:hover {
@@ -872,6 +881,7 @@ transform: scale(0, 0);
 button.category, button.about, button.contact {
     position: relative;
     color: #000000;
+    cursor: pointer;
 }
 
 button.about > p, button.contact > p {
@@ -908,6 +918,7 @@ button.category.selected > p {
 
 button#entry-back, button#about-back, button#contact-back {
     color: #000000;
+    cursor: pointer;
 }
 
 button, button > p {
