@@ -9,8 +9,7 @@ import { Contact } from './Contact.js';
 
 const startingState = {
     config,
-    entry: config.entries[config.entries.length-1],
-    showEntry: false,
+    entry: undefined,
     showAbout: false,
     showContact: false,
     tags: {},
@@ -31,7 +30,6 @@ class App extends Component {
     }
     selectEntry(id) {
         this.setState({ entry: config.entries[id] });
-        this.setState({ showEntry: true });
     }
 
     selectCategory(tag) {
@@ -40,7 +38,7 @@ class App extends Component {
         this.setState(newTags);
     }
     hideEntry() {
-        this.setState({ showEntry: false });
+        this.setState({ entry: undefined });
     }
     toggleAbout() {
         this.setState({ showAbout: !this.state.showAbout });
@@ -53,7 +51,7 @@ class App extends Component {
       <div className="App">
         <Portfolio state={this.state} selectEntry={this.selectEntry} />
         <Nav state={this.state} selectCategory={this.selectCategory} toggleContact={this.toggleContact} toggleAbout={this.toggleAbout} />
-        <Entry state={this.state} hideEntry={this.hideEntry} />
+        <Entry state={this.state} selectEntry={this.selectEntry} hideEntry={this.hideEntry} />
         <About state={this.state} toggleAbout={this.toggleAbout} toggleContact={this.toggleContact} />
         <Contact state={this.state} toggleContact={this.toggleContact} />
       </div>
