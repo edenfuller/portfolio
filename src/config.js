@@ -82,12 +82,14 @@ export const config = {
            color: 'blue',
 
            thumbnail: mercedesThumb,
-           title: "Mercedes E-Class (Entry 2)",
+           title: "publication-timeline",
            role: "Designer",
            tags: [
                'design',
            ],
-           project: "Mobile rebuild of a desktop rich media advertisement rendered in a 3D environment. The 3D library exceeded the file weight limit of 300KB initial load and 1MB maximum load for all images and code. I worked with the client to develop a mobile advertisement that recreated the look and feel of the original using only web elements.",
+           project: `publication-timeline is an interactive CV for use by professionals in the sciences, medicine, and academia. The app allows a user to browse a large number of the author's published works in chronological order and filter publications by type and category.
+
+The app uses a simple config object stored in config.js to set the author name and details, as well as a list of publication types and categories. The config pulls a publication list from data.js, which is structured to receive data from a simple spreadsheet processed through one of the many CSV-to-JSON converters available online.`,
            date: 2016,
            headerType: 'image',
            headerSrc: headerMercedes,
