@@ -23,11 +23,16 @@
 }
 #demo, #github {
     position: relative;
+    cursor: pointer;
+}
+#demo a, #github a {
+    cursor: pointer;
 }
 #demo img, #github img {
     height: 100%;
     width: 100%;
     position: absolute;
+    cursor: pointer;
 }
 .description-button {
     position: absolute;
@@ -536,15 +541,15 @@ img.thumbnail-preview {
 
 @keyframes peekThrough {
     from {
-        transform: translate3d(20%, 20%, 0) scale(1.25, 1.25);
+        transform: translate3d(15%, 15%, 0) scale(1.25, 1.25);
         opacity: 0;
     }
     5% {
-        transform: translate3d(15%, 15%, 0) scale(1.25, 1.25);
+        transform: translate3d(11.25%, 11.25%, 0) scale(1.25, 1.25);
         opacity: 0.5;
     }
     15% {
-        transform: translate3d(5%, 5%, 0) scale(1.25, 1.25);
+        transform: translate3d(3.75%, 3.75%, 0) scale(1.25, 1.25);
         opacity: 0.5;
     }
     20% {

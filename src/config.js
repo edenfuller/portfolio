@@ -46,6 +46,8 @@ import masn1 from './media/masn/1.png';
 import illustrationHeader from './media/illustration/moonWitch.jpg';
 import illustrationThumb from './media/illustration/thumb.jpg';
 import illustration0 from './media/illustration/temple.png';
+import illustration1 from './media/illustration/1.gif';
+import illustration2 from './media/illustration/2.gif';
 
 const about = <div>
     <p>
@@ -264,10 +266,18 @@ The app uses a simple config object stored in config.js to set the author name
              {
                  src: illustration0,
                  type: 'image',
+                 description: 'environment concept for a client project',
              },
              {
                  src: illustrationHeader,
+                 description: 'In 2015-2016, I wrote a series of tutorials on Brinkbit\'s blog teaching JavaScript and basic development concepts to new game developers. The Moon Witch is a character who appeared in the tutorials to help visualize basic development concepts.'
              },
+             {
+                 src: illustration1,
+            },
+            {
+                src: illustration2,
+           },
          ],
      },
     ]
