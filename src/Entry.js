@@ -77,7 +77,7 @@ export class Entry extends Component {
                     <div id="entry-gallery" className={entry.color}>
                         {gallery}
                     </div>
-                    <button id="entry-back"
+                    <button id="entry-back" className={entry.color}
                         onClick={( e ) => {
                             this.hideEntry();
                         }}

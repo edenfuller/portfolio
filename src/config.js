@@ -121,7 +121,7 @@ export const config = {
 
            thumbnail: timelineThumb,
            title: "publication-timeline",
-           role: "Designer",
+           role: "Developer",
            tags: [
                'develop',
            ],
@@ -201,7 +201,7 @@ The app uses a simple config object stored in config.js to set the author name
 
         thumbnail: cedarThumb,
         title: "Cedar Fair Photoshoot",
-        role: "Designer/Developer",
+        role: "Designer, Developer",
         tags: [
             'design',
             'develop',
@@ -228,7 +228,7 @@ The app uses a simple config object stored in config.js to set the author name
        color: 'blue',
        thumbnail: masnThumb,
        title: "MASN XML Ad",
-       role: "Designer/Developer",
+       role: "Designer, Developer",
        tags: [
            'design',
            'develop',
@@ -249,7 +249,7 @@ The app uses a simple config object stored in config.js to set the author name
        ],
       },
       {
-         color: 'green',
+         color: 'black',
          thumbnail: illustrationThumb,
          title: "Illustrations",
          role: "Illustrator",

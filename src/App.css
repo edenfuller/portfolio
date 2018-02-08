@@ -186,6 +186,9 @@ a.contact-link {
 .green {
     background-color: #00d684;
 }
+.black {
+    background-color: #070707;
+}
 #entry-header-holder {
     height: 65vmin;
     width: 65vmin;
@@ -206,6 +209,11 @@ a.contact-link {
     width: auto;
     left: 18.6%;
     top: 8%;
+}
+
+.header-square {
+    height: auto;
+    width: 100vw;
 }
 
 .header-phone-portrait {
@@ -525,9 +533,13 @@ button#entry-back, button#about-back, button#contact-back {
     font-family: 'houschka-rounded';
     font-weight: light;
     font-size: 4vmax;
+    background-color: rgba(255, 255, 255, 0);
     transform: rotateZ(-135deg);
     margin: 0;
     padding: 0;
+}
+button#entry-back.black {
+    color: #bbbbbb;
 }
 
 img.thumbnail-preview, img.thumbnail-hover {
