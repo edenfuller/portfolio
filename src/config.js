@@ -125,7 +125,7 @@ export const config = {
            tags: [
                'develop',
            ],
-           project: `publication-timeline is an interactive CV for use by professionals in the sciences, medicine, and academia. The app allows a user to browse a large number of the author's published works in chronological order and filter publications by type and category.
+           project: `This React app is an interactive CV for use by professionals in the sciences, medicine, and academia. The app allows a user to browse a large number of the author's published works in chronological order and filter publications by type and category.
 
 The app uses a simple config object stored in config.js to set the author name and details, as well as a list of publication types and categories. The config pulls a publication list from data.js, which is structured to receive data from a simple spreadsheet processed through one of the many CSV-to-JSON converters available online.`,
            date: 2018,
